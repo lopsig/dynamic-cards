@@ -10,7 +10,10 @@ const createCards = () => {
   let to = document.getElementById("txtTo")
   let toValue = parseInt(to.value)
   console.log(toValue)
-  for (let i = fromValue; i <= toValue; i++){
+  let jump = document.getElementById("txtJump")
+  let jumpValue = parseInt(jump.value)
+  console.log(jumpValue)
+  for (let i = fromValue; i <= toValue; i+=jumpValue){
     container += "<div class = 'item'>" + i + "</div>"
     divCards.innerHTML = container
   }

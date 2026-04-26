@@ -9,18 +9,19 @@
 </head>
 <body>
 
+  <button class="btn" onclick="createCards()">Generar</button>
   <div class="top">
-    <button class="btn" onclick="createCards()">Generar</button>
     <div class="inputs">
       <div>
         <input type="number" id="txtFrom" placeholder="Desde">
-        <div></div>
       </div>
-      <input type="number" id="txtTo" placeholder="Hasta">
       <div>
+        <input type="number" id="txtTo" placeholder="Hasta">
+      </div>
     </div>
-
-    </div>
+  </div>
+  <div class="inputs">
+    <input type="number" id="txtJump" placeholder="Salto">
   </div>
 
   <div class="contenedor" id="divCards">
